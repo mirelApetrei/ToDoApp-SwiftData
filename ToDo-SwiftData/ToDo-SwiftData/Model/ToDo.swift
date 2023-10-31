@@ -22,15 +22,20 @@ final class ToDo {
 
     var tags: [Tag]?
 
-
-    init(timestamp: Date, name: String, isDone: Bool = false, priority: Int = 0) {
-        self.creationDate = timestamp
+    init(name: String, isDone: Bool = false, priority: Int = 0) {
+        self.creationDate = Date()
         self.name = name
         self.isDone = isDone
         self.priority = priority
     }
-}
 
+    static func example() -> ToDo {
+        let todo = ToDo(name: "Buy milk")
+        let tag = Tag(name: "Shopping", color: RGBColor(red: 1, green: 0, blue: 0))
+        todo.tags?.append(tag)
+        return todo
+    }
+}
 
 
 

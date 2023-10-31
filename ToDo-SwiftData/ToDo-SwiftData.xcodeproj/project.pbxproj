@@ -14,6 +14,10 @@
 		97E341652AF0614C00018A70 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97E341642AF0614C00018A70 /* Preview Assets.xcassets */; };
 		97E3416C2AF0654600018A70 /* RGBColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E3416B2AF0654600018A70 /* RGBColor.swift */; };
 		97E3416F2AF0670D00018A70 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E3416E2AF0670D00018A70 /* Tag.swift */; };
+		97E341712AF1805400018A70 /* DetailToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E341702AF1805400018A70 /* DetailToDoView.swift */; };
+		97E341742AF184AA00018A70 /* ToDoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E341732AF184AA00018A70 /* ToDoRow.swift */; };
+		97E341772AF18AF300018A70 /* ModelPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E341762AF18AF300018A70 /* ModelPreview.swift */; };
+		97E341792AF18B2500018A70 /* PreviewSampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E341782AF18B2500018A70 /* PreviewSampleData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +29,10 @@
 		97E341642AF0614C00018A70 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		97E3416B2AF0654600018A70 /* RGBColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBColor.swift; sourceTree = "<group>"; };
 		97E3416E2AF0670D00018A70 /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		97E341702AF1805400018A70 /* DetailToDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailToDoView.swift; sourceTree = "<group>"; };
+		97E341732AF184AA00018A70 /* ToDoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoRow.swift; sourceTree = "<group>"; };
+		97E341762AF18AF300018A70 /* ModelPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelPreview.swift; sourceTree = "<group>"; };
+		97E341782AF18B2500018A70 /* PreviewSampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewSampleData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +66,8 @@
 			isa = PBXGroup;
 			children = (
 				97E3415B2AF0614B00018A70 /* ToDo_SwiftDataApp.swift */,
-				97E3415D2AF0614B00018A70 /* ContentView.swift */,
 				97E3416D2AF066BA00018A70 /* Model */,
+				97E341752AF18ACE00018A70 /* PreviewHelpers */,
 				97E341612AF0614C00018A70 /* Assets.xcassets */,
 				97E341632AF0614C00018A70 /* Preview Content */,
 			);
@@ -80,8 +88,28 @@
 				97E3416B2AF0654600018A70 /* RGBColor.swift */,
 				97E3415F2AF0614B00018A70 /* ToDo.swift */,
 				97E3416E2AF0670D00018A70 /* Tag.swift */,
+				97E341722AF1805A00018A70 /* Views */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		97E341722AF1805A00018A70 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				97E3415D2AF0614B00018A70 /* ContentView.swift */,
+				97E341702AF1805400018A70 /* DetailToDoView.swift */,
+				97E341732AF184AA00018A70 /* ToDoRow.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		97E341752AF18ACE00018A70 /* PreviewHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				97E341762AF18AF300018A70 /* ModelPreview.swift */,
+				97E341782AF18B2500018A70 /* PreviewSampleData.swift */,
+			);
+			path = PreviewHelpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,11 +182,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97E341772AF18AF300018A70 /* ModelPreview.swift in Sources */,
+				97E341742AF184AA00018A70 /* ToDoRow.swift in Sources */,
 				97E3415E2AF0614B00018A70 /* ContentView.swift in Sources */,
+				97E341712AF1805400018A70 /* DetailToDoView.swift in Sources */,
 				97E3416C2AF0654600018A70 /* RGBColor.swift in Sources */,
 				97E3416F2AF0670D00018A70 /* Tag.swift in Sources */,
 				97E341602AF0614B00018A70 /* ToDo.swift in Sources */,
 				97E3415C2AF0614B00018A70 /* ToDo_SwiftDataApp.swift in Sources */,
+				97E341792AF18B2500018A70 /* PreviewSampleData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
